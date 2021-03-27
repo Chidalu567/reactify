@@ -1,5 +1,5 @@
 import React from "react";
-import Setup from "./Advance react/useReducer/useReducer";
+import Setup from "./Advance react/contextApi/Context_api";
 import "./App.css";
 
 function App() {
