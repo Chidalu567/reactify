@@ -4,8 +4,8 @@ export const useFetch = (url) => {
   const [products, setProducts] = useState([]); //state value and handler definition
 
   const getProducts = async () => {
-    const raw_datas = await fetch(url); //fetch the url
-    const refined_data = await raw_datas.json(); //convert the data to json format
+    const raw_datas = await fetch(url); //await for fetch of the url
+    const refined_data = await raw_datas.json(); //await to convert the data to json format
 
     setProducts(refined_data); //state handler call
   }; //javascript function definition
@@ -13,5 +13,5 @@ export const useFetch = (url) => {
   useEffect(() => {
     getProducts(); //javascript function call
   }, []); //useEffect hook definition
-  return { products };
+  return { products }; //return an object
 }; //javasctipt function definition (custom hooks)

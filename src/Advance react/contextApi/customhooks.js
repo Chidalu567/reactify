@@ -2,9 +2,10 @@ import React, { useEffect, useState } from "react";
 import { useFetch } from "./apicall";
 
 const Customhook = () => {
+  //React component definition
   const url = "https://course-api.com/javascript-store-products"; //javascript definition
   const { products } = useFetch(url); //custom hook defintion
-  console.log(products);
+  console.log(products); //console log the products
   return (
     <>
       <h2>Custom hook in react</h2>

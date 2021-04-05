@@ -1,3 +1,10 @@
+:root {
+  --text_shift: left;
+  --blue-img: rgba(50, 50, 150, 3);
+  --stn-size: 30px;
+  --par-size: 10px;
+}
+
 * {
   padding: 0px;
   margin: 0px;
@@ -72,14 +79,6 @@ h2 {
   margin-right: 20%;
 }
 
-h5 {
-  color: rgba(50, 50, 150, 3);
-  font-size: 20px;
-  padding: 20px;
-  display: inline;
-  padding-top: 30px;
-}
-
 .rmvb {
   display: inline;
   color: white;
@@ -99,4 +98,37 @@ h6 {
   text-align: right;
   display: inline;
   padding-top: 30px;
+}
+
+.product_item {
+  margin: 4rem 0;
+  display: grid;
+  gap: 2rem;
+  box-sizing: border-box;
+  background-color: white;
+}
+
+figure {
+  margin-left: 300px;
+}
+
+.figcaption {
+  display: flex;
+  flex-direction: column;
+}
+
+img {
+  width: 600px;
+  height: 400px;
+}
+
+.product_name {
+  text-align: var(--text_shift);
+  color: var(--blue-img);
+  font-size: var(--stn-size);
+}
+
+.product_price {
+  text-align: left;
+  font-size: 10px !important;
 }

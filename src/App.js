@@ -1,5 +1,5 @@
 import React from "react";
-import Setup from "./Advance react/contextApi/customhooks";
+import Setup from "./Advance react/Prop/proptypes";
 import "./App.css";
 
 function App() {
